@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OceanCup - Pakistan's First Ocean-Themed Café</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🐚</span>
+                <span class="logo-text">OceanCup</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#ambiance">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#drinks">Drinks</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#location">Visit</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <!-- Animated wave SVG -->
+            <svg class="wave-animation" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,50 Q300,10 600,50 T1200,50 L1200,120 L0,120 Z" fill="rgba(255,255,255,0.1)"/>
+            </svg>
+        </div>
+
+        <div class="hero-content">
+            <div class="bubble-container" id="bubbleContainer"></div>
+            
+            <h1 class="hero-title">
+                <span class="wave-icon">〰️</span>
+                OceanCup
+            </h1>
+            <p class="hero-tagline">Pakistan's First Ocean-Themed Café</p>
+            <p class="hero-location">🏪 Mall-94, Gulberg, Lahore</p>
+            
+            <div class="hero-cta">
+                <a href="#menu" class="cta-button primary">View Menu</a>
+                <a href="#location" class="cta-button secondary">Visit Us</a>
+            </div>
+        </div>
+
+        <!-- Wave divider at bottom -->
+        <svg class="wave-divider" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#0a3d5c;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#2a9d8f;stop-opacity:0.3" />
+                </linearGradient>
+            </defs>
+            <path d="M0,40 Q300,0 600,40 T1200,40 L1200,120 L0,120 Z" fill="url(#waveGradient)" opacity="0.6"/>
+            <path d="M0,60 Q300,20 600,60 T1200,60 L1200,120 L0,120 Z" fill="#2a9d8f" opacity="0.4"/>
+        </svg>
+    </section>
+
+    <!-- Ambiance / About Section -->
+    <section id="ambiance" class="ambiance fade-in-section">
+        <div class="container">
+            <div class="ambiance-grid">
+                <div class="ambiance-text">
+                    <h2>Dive Into an Underwater Dream</h2>
+                    <p>
+                        Welcome to OceanCup, Lahore's first and only ocean-themed café. 
+                        Immerse yourself in a deep-sea fantasy with our carefully crafted interior: 
+                        live aquarium portholes showcasing vibrant tropical fish, mesmerizing navy and teal 
+                        decor, and the gentle ambiance of underwater exploration.
+                    </p>
+                    <p>
+                        Perfect for families, friends, and Instagram-worthy moments. Every corner is 
+                        designed to transport you beneath the waves—where great food meets wonder.
+                    </p>
+                    <ul class="ambiance-features">
+                        <li>🐠 Live Aquarium Windows</li>
+                        <li>🪑 Luxe Velvet Seating</li>
+                        <li>📸 Insta-Perfect Aesthetic</li>
+                        <li>👨‍👩‍👧‍👦 Family-Friendly Vibe</li>
+                    </ul>
+                </div>
+
+                <div class="ambiance-images">
+                    <!-- REPLACE: real aquarium porthole photo -->
+                    <div class="porthole-frame">
+                        <div class="porthole-placeholder" style="background: linear-gradient(135deg, #0a3d5c 0%, #2a9d8f 100%);"></div>
+                        <p class="image-label">Live Aquarium</p>
+                    </div>
+
+                    <!-- REPLACE: real interior/seating photo -->
+                    <div class="porthole-frame">
+                        <div class="porthole-placeholder" style="background: linear-gradient(135deg, #2a9d8f 0%, #f5a962 100%);"></div>
+                        <p class="image-label">Seating Area</p>
+                    </div>
+
+                    <!-- REPLACE: real food/coffee photo -->
+                    <div class="porthole-frame">
+                        <div class="porthole-placeholder" style="background: linear-gradient(135deg, #f5a962 0%, #d4693d 100%);"></div>
+                        <p class="image-label">Food & Drinks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave separator -->
+        <svg class="wave-separator" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,60 Q300,20 600,60 T1200,60 L1200,120 L0,120 Z" fill="#f5f0e6" opacity="0.8"/>
+        </svg>
+    </section>
+
+    <!-- Menu Preview Section -->
+    <section id="menu" class="menu fade-in-section">
+        <div class="container">
+            <h2 class="section-title">OC Starters</h2>
+            <p class="section-subtitle">Dive into our signature bites</p>
+
+            <div class="menu-grid">
+                <!-- TENDERS -->
+                <div class="menu-category">
+                    <div class="menu-header">
+                        <span class="menu-label">TENDERS</span>
+                    </div>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">1 Piece Tender</span>
+                            <span class="item-price">Rs. 225</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">3 Piece Tender</span>
+                            <span class="item-price">Rs. 699</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">5 Piece Tender</span>
+                            <span class="item-price">Rs. 1,060</span>
+                        </div>
+                        <div class="menu-item featured">
+                            <span class="item-name">Tender Family Pack</span>
+                            <span class="item-desc">8pc tenders, plain fries, 2 dip sauces</span>
+                            <span class="item-price">Rs. 1,999</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FRIES -->
+                <div class="menu-category">
+                    <div class="menu-header">
+                        <span class="menu-label">FRIES</span>
+                    </div>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">Plain Fries</span>
+                            <span class="item-price">Rs. 290</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Curly Fries</span>
+                            <span class="item-price">Rs. 440</span>
+                        </div>
+                        <div class="menu-item featured">
+                            <span class="item-name">Loaded Fries</span>
+                            <span class="item-price">Rs. 799</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COMBOS -->
+                <div class="menu-category">
+                    <div class="menu-header">
+                        <span class="menu-label">COMBOS</span>
+                    </div>
+                    <div class="menu-items">
+                        <div class="menu-item featured">
+                            <span class="item-name">Loaded Fries + OC Drink</span>
+                            <span class="item-desc">Blue Lagoon, Passion Fruit, Peach, or Strawberry</span>
+                            <span class="item-price">Rs. 1,240</span>
+                        </div>
+                        <div class="menu-item featured">
+                            <span class="item-name">4pc Tenders + Dip + OC Drink</span>
+                            <span class="item-desc">Your choice of drink flavors</span>
+                            <span class="item-price">Rs. 1,240</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TACOS -->
+                <div class="menu-category">
+                    <div class="menu-header">
+                        <span class="menu-label">TACO'S</span>
+                    </div>
+                    <div class="menu-items">
+                        <div class="menu-item">
+                            <span class="item-name">Chicken Fajita Taco's</span>
+                            <span class="item-price">Rs. 799</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="item-name">Beef Fajita Taco's</span>
+                            <span class="item-price">Rs. 899</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave separator -->
+        <svg class="wave-separator" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,60 Q300,20 600,60 T1200,60 L1200,120 L0,120 Z" fill="#0a3d5c"/>
+        </svg>
+    </section>
+
+    <!-- Signature Drinks Section -->
+    <section id="drinks" class="drinks fade-in-section">
+        <div class="container">
+            <h2 class="section-title">OC Signature Drinks</h2>
+            <p class="section-subtitle">Quench your thirst with ocean colors</p>
+
+            <div class="drinks-grid">
+                <div class="drink-card">
+                    <div class="drink-icon" style="background: linear-gradient(135deg, #00a8e8 0%, #0a3d5c 100%);"></div>
+                    <h3>Blue Lagoon</h3>
+                    <p>Tropical paradise in a glass</p>
+                </div>
+
+                <div class="drink-card">
+                    <div class="drink-icon" style="background: linear-gradient(135deg, #ff6b9d 0%, #f5a962 100%);"></div>
+                    <h3>Passion Fruit</h3>
+                    <p>Sweet, tangy, and unforgettable</p>
+                </div>
+
+                <div class="drink-card">
+                    <div class="drink-icon" style="background: linear-gradient(135deg, #f5a962 0%, #d4693d 100%);"></div>
+                    <h3>Peach Bliss</h3>
+                    <p>Smooth and refreshing</p>
+                </div>
+
+                <div class="drink-card">
+                    <div class="drink-icon" style="background: linear-gradient(135deg, #d4693d 0%, #c41e3a 100%);"></div>
+                    <h3>Strawberry Dream</h3>
+                    <p>Berry perfection, icy cold</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave separator -->
+        <svg class="wave-separator" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,60 Q300,20 600,60 T1200,60 L1200,120 L0,120 Z" fill="#f5f0e6"/>
+        </svg>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Gallery</h2>
+            <p class="section-subtitle">A glimpse into our underwater world</p>
+
+            <div class="gallery-grid">
+                <!-- REPLACE: real aquarium porthole photo -->
+                <div class="gallery-item">
+                    <div class="porthole-gallery">
+                        <div class="porthole-placeholder-gallery" style="background: linear-gradient(135deg, #0a3d5c 0%, #2a9d8f 100%);"></div>
+                    </div>
+                </div>
+
+                <!-- REPLACE: real food presentation photo -->
+                <div class="gallery-item">
+                    <div class="porthole-gallery">
+                        <div class="porthole-placeholder-gallery" style="background: linear-gradient(135deg, #f5a962 0%, #d4693d 100%);"></div>
+                    </div>
+                </div>
+
+                <!-- REPLACE: real interior/ambiance photo -->
+                <div class="gallery-item">
+                    <div class="porthole-gallery">
+                        <div class="porthole-placeholder-gallery" style="background: linear-gradient(135deg, #2a9d8f 0%, #1a7a6b 100%);"></div>
+                    </div>
+                </div>
+
+                <!-- REPLACE: real drink/coffee photo -->
+                <div class="gallery-item">
+                    <div class="porthole-gallery">
+                        <div class="porthole-placeholder-gallery" style="background: linear-gradient(135deg, #00a8e8 0%, #0a3d5c 100%);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave separator -->
+        <svg class="wave-separator" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,60 Q300,20 600,60 T1200,60 L1200,120 L0,120 Z" fill="#0a3d5c"/>
+        </svg>
+    </section>
+
+    <!-- Location / Visit Section -->
+    <section id="location" class="location fade-in-section">
+        <div class="container">
+            <h2 class="section-title">Visit Us</h2>
+
+            <div class="location-grid">
+                <div class="location-info">
+                    <h3>Where to Find Us</h3>
+                    <div class="info-item">
+                        <strong>📍 Address:</strong>
+                        <p>Mall-94, Gulberg, Lahore, Pakistan</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>⏰ Hours:</strong>
+                        <p>Monday - Sunday: 10:00 AM - 11:00 PM</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>📱 Contact:</strong>
+                        <p>
+                            <a href="https://wa.me/923001234567" class="social-link" target="_blank">
+                                💬 Message on WhatsApp
+                            </a>
+                        </p>
+                    </div>
+                    <div class="info-item">
+                        <strong>📷 Follow Us:</strong>
+                        <div class="social-icons">
+                            <a href="https://instagram.com/oceancuplahore" class="social-icon" target="_blank">📸 Instagram</a>
+                            <a href="https://www.facebook.com/oceancuplahore" class="social-icon" target="_blank">👍 Facebook</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="location-map">
+                    <!-- REPLACE: Replace iframe src with actual Google Maps embed URL for Mall-94, Gulberg, Lahore -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3401.8549852730906!2d74.33156762346927!3d31.548802174186397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391904abc123456%3A0x123456789abc!2sMall-94%2C%20Gulberg%2C%20Lahore!5e0!3m2!1sen!2s!4v1234567890" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0; border-radius: 12px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-icon">🐚</span>
+                <span class="logo-text">OceanCup</span>
+            </div>
+            <p class="footer-tagline">Pakistan's First Ocean-Themed Café</p>
+            
+            <div class="footer-socials">
+                <a href="https://instagram.com/oceancuplahore" target="_blank" title="Instagram">📸</a>
+                <a href="https://wa.me/923001234567" target="_blank" title="WhatsApp">💬</a>
+            </div>
+
+            <p class="footer-credit">
+                Crafted with 💙 for OceanCup
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
